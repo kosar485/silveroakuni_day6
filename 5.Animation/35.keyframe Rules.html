@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: test;
+			animation-duration: 4s; 
+		}
+
+		@keyframes test{
+			from{background-color: red;}
+			to{background-color: yellow;}
+		}
+
+		.div2{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: test2;
+			animation-duration: 4s; 
+		}
+
+		@keyframes test2{
+			0%{background-color: red;}
+			25%{background-color: yellow;}
+			50%{background-color: pink;}
+			100%{background-color: blue;}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>

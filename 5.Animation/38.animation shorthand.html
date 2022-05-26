@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			font-weight: bold;
+			animation-name: exmple;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			animation-delay: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes exmple{
+			0%{background-color: red;left: 0px;top: 0px;}
+			25%{background-color: yellow;left:	200px;top: 0px;}
+			50%{background-color: blue;left: 200px;top: 200px;}
+			75%{background-color: green;left: 0px;top: 200px;}
+			100%{background-color: red;left: 0px;top: 0px;}
+		}
+
+		.div2{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			font-weight: bold;
+			animation:mytest 5s linear 2s infinite alternate; /* animation function one line  (shorthand ) */
+		}
+		@keyframes mytest{
+			0%{background-color: red;left: 0px;top: 0px;}
+			25%{background-color: yellow;left:	200px;top: 0px;}
+			50%{background-color: blue;left: 200px;top: 200px;}
+			75%{background-color: green;left: 0px;top: 200px;}
+			100%{background-color: red;left: 0px;top: 0px;}
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>
